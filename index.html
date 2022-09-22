@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="resetstylesheet.css"/>
-    <link rel="stylesheet" href="stylesheet.css"/>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-    <h1> Bryan</h1>
-    <nav> 
-        <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
-    </nav>
+      <h1 class="title">Bryan Segarra</h1>
+      <nav>
+        <button class="button is-rounded"></button>
+        <a href="#aboutme">
+          <button class="button is-primary is-rounded">About Me</button></a
+        >
+        <a href="#Project">
+          <button class="button is-link is-rounded">Project</button></a
+        >
+        <a href="#Resume"
+          ><button class="button is-info is-rounded">Resume</button></a
+        >
+        <a href="#Contactme">
+          <button class="button is-success is-rounded">Contact Me</button></a
+        >
+        <button class="button is-danger is-rounded"></button>
+      </nav>
     </header>
+    <div id="mypic">
+      <img src="asset/Sunglass.jpg" />
+    </div>
+     <figcaption>Also i like wearing Sunglasses</figcaption>
+    <section id="aboutme">
+      <div id="about">
+        <h1>About Me</h1>  
+        <p>
+          I am Bryan, a full stack devloper student.
+           I currently live in Torrington, Connectucit.
+          </p>
+          <p>
+           I have knowledge in HTML, CSS, and JavaScript.
+           i am very excited for the next step in <strong>Web Development</strong>
+        </p>     
+      </div>
+    </section>
 
-    <section class="AboutMe">
-    <h2> About Me </h2>
-    <p>
-        well a little qiuck summary about me i like to take photos and hike a lot. 
-        I like to work with my computer with editing also coding to improve my skill.
-        I know i can ahcive it later on but i really enjoy Web Devloping a lot.
-    </P>
-     </section>
+          
+    <section id="Project">
+      <div class="block">
+        <h2><strong>Project</strong></h2>
+        <p>
+          Here is some of the work of done:
+        </p>
+        <div id="content">
+        <figure>
+         <a href="https://github.com/Bryguy20/to-practice"> <img src="./asset/screenshot.png"/></a>
+         
+         <a href="https://github.com/Bryguy20/The-employee-list"> <img src="./asset/teamwork.png"/></a>
+        </figure>
+        </div>
+        <div class="Css"></div>
+      </div>
+    </section>
 
-     <section class="Work">
-         <h3>Work</h3>
-               <div class="Css"> <p>Example1</P>
-               </div>
-                <p class="Background">Example2</p>
-            </section>
-            
-           <section class="Resume">
-               <h4>Resume</h4>
-               <div class="Block">
-                <P> Some of my Devloping</P>
-               </div>
-           </section>
+    <section id="Resume">
+      <h4>Resume</h4>
+       <p>Here is my Resume their isn't a lot of information but i'm still working on <a href="https://docs.google.com/document/d/1sRIDhZ-K7R3Zo50c-EEHQ_gMWcY5yXaY1tTsZFbzFNI/edit?usp=sharing" target="_blank">it</a></p>
+      </div>
+    </section>
+    <footer id="Contactme">
+        <h5>Contact Me</h5>
 
-            <section class="Contactme">
-                <h5>Contact Me</h5>
-                <P1> This is all of contact information you can reach me if needed.</P1>
-                
-                <ul>
-                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"> 
-                    https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new</a> </li>
+        <p> This is all of contact information you can reach me if needed:</p>
+          <ol>
+          <li>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new</a>
+          </li>
 
-                 <li><a href="https://github.com/">https://github.com/</a></li>   
-              
-                </ul>
-            </section>  
-      
-             
-
-    
-    
-            </body>
+          <li><a href="https://github.com/">https://github.com/</a></li>
+        </ol>
+    </footer>
+  </body>
 </html>

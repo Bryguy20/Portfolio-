@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-    background-color: #505050;
+    background-color: grey;
     color: unset;
 }
 
@@ -17,52 +17,109 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
-    background-color: var(--chartreuse);
+    padding: 0.5%;
+    background-color: crimson;
     color: var(--firebrick);
 }
 
 h1 h2 h3 h4 h5{
-    font-size: 200%;
+    font-size: 250px;
+}
+h1 p{
+    margin: 15px 20px;
 }
 
-nav ul{
+nav {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
     text-decoration: underline;
 }
 
-nav a{
+nav {
     background-color: unset;
     color: unset;
     font-weight: bold;
     text-decoration:wavy;
 }
- 
+#mypic{
+    align-items: center;
+    border-radius: 25ps 20px;
+    background-color:aliceblue;
+    margin-top: 30px;
+    margin: auto;
+    padding: 20px;
+}
+#content figure{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin: 50px 55px; */
+    padding: 12px 15px;
+    
+}
+
+figcaption{
+    text-align: center;
+    border: 19px;
+    padding: 25px;
+}
+figure:hover{
+    border: 15px 30px;
+    display: block;
+}
+figcaption:hover{
+    font-size: 300px;
+    color:aqua;
+    font-size: 22px;
+    background-color: #fff;
+    margin: auto;
+}
+.button:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.footer {
+    background-color:antiquewhite;
+    /* width: 20px;
+    block-size: 200px; */
+
+}
 h2{
     text-align: center;
     flex-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.AboutMe{
-    width: 300px;
-    border: 15px;
-    padding: 50px;
-    margin: 20px;
-    border-style: dashed;
-    align-self: center;
+#about {
+        left: 1px;
+            border: 1px solid black;
+            padding: 15px;
+            max-width: 100%;
+            position: relative;
+            border-color: #010e80;
+            border-width: 5px;
+            font-size: 18px;
+            height: 350px;
+            text-align: center;
+            background-color: var(--firebrick);
+            margin-top: 20px;
+            background-image: url(./asset/download.jpeg);
 }
-.Work{
-    padding: 60px;
-    width: 327px;
-    height: 367px;
-    text-align: center;
+#about:hover {
+    font-size: 300px;
+        color: #000080;
+        font-size: 22px;
+    
+}
+#Project{
+    left: 1px;
+    padding: 15px;
+    position: relative;
     border-style: solid;
-    border-width: 1px;
-    align-self: self-end;
+    border-width: 3px;
     background-color: aqua;
+    margin-top: 15px;
 }
 .Css:hover{
     display: block;
@@ -70,16 +127,16 @@ h2{
     padding: 100px;
     border-style: dotted;
     background-color:var(--neon) ;
+    box-shadow: 0 0 60px 30px #fff,
+    0 0 100px 60px #f0f,
+    0 0 140px 90px #0ff;
 } 
 .Css{
         width: 47px;
         height: 40px;
         border-radius: 50%;
         background-color: #fff;
-        box-shadow:
-          0 0 60px 30px #fff,  
-          0 0 100px 60px #f0f, 
-          0 0 140px 90px #0ff; 
+       
 }
 .Background .p{
     display: none;
@@ -93,40 +150,103 @@ h2{
     color: black;
 }
 
-
-.Resume:hover {
-    font-size: 100px;
-    width: 300px;
-    border: 3px;
-    padding: 70px 0;
-    margin: 20px;
-    border-style: ridge;
-    background-color: plum;
-    text-align: center;
+img{
+    width: 350px;
+    height: 270px;
+    position: static;
+    border-radius: 15px 20px;
+    
 }
 
+embed{
+    background-image: url(./asset/download.jpeg);
+}
 .Block:hover{
     transform-style: preserve-3d;
+    height: 200px;
     width: 300px;
     border: 15px;
     padding: 50px;
     margin: 20px;
     align-self: center;
+    overflow: scroll;
 }
 
-.Block:hover{
+@media screen and (max-width: 1279px) {
+    .my-element {
+        background: green;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #Resume {
+        color: orange;
+        border: 0.5px dotted;
+        left: 10px;
+        padding: 15px;
+        border-width: 5px;
+        font-size: 18px;
+        max-width: 35%;
+
+    }
+}
+
+.block:hover{
     font-size: 300px;
     color: chocolate;
     font-size: 22px;
 }
 
-.Contactme{
+#Contactme{
     font-size: larger;
-    width: 300px;
+    width: 375px;
     border: 15px;
     padding: 50px;
     margin: 20px;
     border-style: groove;
     background-color: var(--darkseagreen);
     
+}
+
+.container{
+    display: flex;
+    padding: 50px;
+    width: 250px;
+    border-radius: 15px 25px;
+    flex-direction: row;
+}
+.container:hover{
+    height: 400px;
+    max-height: max-content;
+    width: 400px;
+    padding: 100px;
+    border: 50px;
+}
+
+
+footer {
+    /* position: relative;
+    width: 100%;
+    bottom: auto;
+    background-color: #010e80; */
+    padding: 10px;
+    clear: both;
+    text-align: right;
+    background-color: goldenrod;
+
+}
+footer {
+    color: wheat;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #0ff;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
 }
